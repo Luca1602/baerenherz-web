@@ -1,0 +1,19 @@
+# Node & Build
+node_modules
+.next
+out
+dist
+.build
+.cache
+
+# Env
+.env
+.env.*.local
+
+# Sonstiges
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+studio/

@@ -1,0 +1,70 @@
+// pages/news/index.tsx
+import Link from "next/link"
+import Image from "next/image"
+import { client, urlFor } from "../../../lib/sanity"
+
+type NewsItem = {
+  _id: string
+  title: string
+  slug: { current: string }
+  date: string
+  image?: any
+}
+
+export default function NewsIndex({ news }: { news: NewsItem[] }) {
+  return (
+    <main className="container-custom py-10">
+      <h1 className="text-3xl font-bold mb-6">News</h1>
+
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {news.map((n) => {
+          const imgUrl = n.image
+            ? urlFor(n.image).width(900).height(550).fit("crop").url()
+            : null
+
+          return (
+            <Link
+              key={n._id}
+              href={`/news/${n.slug.current}`}
+              className="block rounded-lg border hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              <article>
+                {imgUrl && (
+                  <Image
+                    src={imgUrl}
+                    alt={n.title}
+                    width={900}
+                    height={550}
+                    className="rounded-t-lg w-full h-48 object-cover"
+                  />
+                )}
+                <div className="p-4">
+                  <div className="text-sm text-gray-600 mb-1">
+                    {new Date(n.date).toLocaleDateString("de-CH")}
+                  </div>
+                  <h2 className="text-xl font-semibold text-blue-900 group-hover:underline">
+                    {n.title}
+                  </h2>
+                </div>
+              </article>
+            </Link>
+          )
+        })}
+      </div>
+    </main>
+  )
+}
+
+export async function getStaticProps() {
+  const news: NewsItem[] = await client.fetch(`
+    *[_type == "news"] | order(date desc){
+      _id,
+      title,
+      slug,
+      date,
+      image
+    }
+  `)
+
+  return { props: { news }, revalidate: 60 }
+}
