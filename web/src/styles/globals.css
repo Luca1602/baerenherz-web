@@ -12,6 +12,7 @@
   --color-accentBlue: #152F4C; 
   --color-accentGray: #FFFFFF; 
   --color-accentSand: #F8F4F0;
+  --color-actionRed: #EB4F67;
   --font-sans: "Lato", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-custom {
-  @apply max-w-6xl mx-auto px-4;
+  @apply mx-auto px-4;
 }
 
 .container-footer {
