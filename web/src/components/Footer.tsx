@@ -24,7 +24,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-accentBlue text-white px-4 py-2 rounded-r-md hover:bg-blue-800"
+              className="bg-accentBlue text-white px-4 py-2 rounded-r-md hover:bg-actionRed cursor-pointer"
             >
               Anmelden
             </button>
@@ -45,7 +45,7 @@ export default function Footer() {
               <li>Untersellenstrasse 27</li>
               <li>CH-8873 Amden</li>
               <br />
-              <li>E-Mail: <a href="mailto:info@baerenherz.org" className="font-semibold" style={{ color: 'rgb(46, 99, 163)' }}>info@baerenherz.org</a></li>
+              <li>E-Mail: <a href="mailto:info@baerenherz.org" className="link">info@baerenherz.org</a></li>
             </ul>
           </div>
 
@@ -54,11 +54,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-3">Bärenherz Deutschland</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/de/impressum" className="hover:underline">
+                <Link href="/de/impressum" className="link">
                   Impressum
                 </Link>
                  &nbsp; | &nbsp; 
-                <Link href="/de/datenschutz" className="hover:underline">
+                <Link href="/de/datenschutz" className="link">
                   Datenschutz
                 </Link>
               </li>
@@ -66,7 +66,7 @@ export default function Footer() {
               <li>Geranienstrasse 2</li>
               <li>U82031 Grünwald</li>
               <br />
-              <li>E-Mail: <a href="mailto:info@baerenherz.org" className="font-semibold" style={{ color: 'rgb(46, 99, 163)' }}>info@baerenherz.org</a></li>
+              <li>E-Mail: <a href="mailto:info@baerenherz.org" className="link">info@baerenherz.org</a></li>
             </ul>
           </div>
 

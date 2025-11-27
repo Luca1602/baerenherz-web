@@ -27,8 +27,8 @@ export default function AboutCH() {
         </div>
       </section>
 
-      <div className="container-body py-0">
-        <section id="about" className="py-8">
+      <div className="container-body">
+        <section id="about">
           <h1 className="text-3xl font-bold mb-6">Über Bärenherz Schweiz</h1>
           <section id="mission" className="py-8">
             <h2 className="text-2xl font-bold mb-4">Mission</h2>

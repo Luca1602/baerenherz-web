@@ -13,6 +13,7 @@
   --color-accentGray: #FFFFFF; 
   --color-accentSand: #F8F4F0;
   --color-actionRed: #EB4F67;
+  --color-link: #0600B5;
   --font-sans: "Lato", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
@@ -21,6 +22,11 @@
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-brandGold);
+}
+
+/* for links and e-mail addresses */
+.link {
+  @apply text-brandGold font-semibold hover:text-actionRed transition-colors;
 }
 
 
@@ -43,7 +49,7 @@ body {
 }
 
 .container-body {
-  @apply max-w-7xl mx-auto px-4;
+  @apply max-w-6xl mx-auto px-4 py-12 px-6;
 }
 
 .container-hero {

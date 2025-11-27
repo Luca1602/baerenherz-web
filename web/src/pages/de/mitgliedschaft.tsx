@@ -27,57 +27,54 @@ export default function MitgliedschaftDE() {
           </div>
       </section>
 
-      <section className="py-12 px-6">
-        <div className="max-w-5xl mx-auto">
+      <section className="container-body">
+        <h2 className="text-2xl font-bold text-blue-900 mb-6">Mitgliedschaft Bärenherz Deutschland</h2>
 
-          <h2 className="text-2xl font-bold text-blue-900 mb-6">Mitgliedschaft Bärenherz Deutschland</h2>
+        <p className="text-gray-800 leading-relaxed">
+          Eine Mitgliedschaft bei Bärenherz Deutschland hilft uns, unsere administrativen Kosten und Aufgaben zu erfüllen.
+          Ein wesentlicher Teil unserer Philosophie ist es, dass alle Einnahmen aus unseren Aktivitäten zu 100% 
+          in die jeweils geförderten Projekte fliessen. Sämtliche administrativen Kosten wie z.B. Pflege der Homepage 
+          werden ehrenamtlich übernommen bzw. von Mitgliedsbeiträgen oder Zuwendungen der Mitglieder getragen.
+          Auch freuen wir uns natürlich, uns mit unseren Mitgliedern auszutauschen, Ideen aufzunehmen und uns 
+          gemeinsam zu engagieren. Wir bieten sowohl eine persönliche Mitgliedschaft wie auch eine Unternehmensmitgliedschaft 
+          für alle an, die die Philosophie und Projekte unseres karitativen Vereins unterstützen wollen.
+          Nachfolgend können Sie die Mitgliedschaft einfach online beantragen, der Vorstand entscheidet dann umgehend über die Aufnahme.
+        </p>
 
-          <p className="text-gray-800 leading-relaxed">
-            Eine Mitgliedschaft bei Bärenherz Deutschland hilft uns, unsere administrativen Kosten und Aufgaben zu erfüllen.
-            Ein wesentlicher Teil unserer Philosophie ist es, dass alle Einnahmen aus unseren Aktivitäten zu 100% 
-            in die jeweils geförderten Projekte fliessen. Sämtliche administrativen Kosten wie z.B. Pflege der Homepage 
-            werden ehrenamtlich übernommen bzw. von Mitgliedsbeiträgen oder Zuwendungen der Mitglieder getragen.
-            Auch freuen wir uns natürlich, uns mit unseren Mitgliedern auszutauschen, Ideen aufzunehmen und uns 
-            gemeinsam zu engagieren. Wir bieten sowohl eine persönliche Mitgliedschaft wie auch eine Unternehmensmitgliedschaft 
-            für alle an, die die Philosophie und Projekte unseres karitativen Vereins unterstützen wollen.
-            Nachfolgend können Sie die Mitgliedschaft einfach online beantragen, der Vorstand entscheidet dann umgehend über die Aufnahme.
-          </p>
-
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Persönliche Mitgliedschaft */}
-            <div className="bg-accentGray p-6 text-center rounded shadow">
-              <h3 className="text-blue-900 font-semibold mb-2">Persönliche Mitgliedschaft Deutschland</h3>
-              <p className="mb-4">Jahresbeitrag EUR 250.00</p>
-              <a
-                href="/mitgliedschaft/de/Baerenherz_Antrag_Mitgliedschaft_DE.pdf"
-                download
-                className="bg-accentBlue text-white px-6 py-2 font-semibold hover:bg-blue-800 inline-block"
-              >
-                Persönliches Mitglied werden
-              </a>
-            </div>
-
-            {/* Unternehmensmitgliedschaft */}
-            <div className="bg-accentGray p-6 text-center rounded shadow">
-              <h3 className="text-blue-900 font-semibold mb-2">Unternehmensmitgliedschaft Deutschland</h3>
-              <p className="mb-4">Jahresbeitrag EUR 1&apos;000.00</p>
-              <a
-                href="/mitgliedschaft/de/Baerenherz_Antrag_Mitgliedschaft_DE.pdf"
-                download
-                className="bg-accentBlue text-white px-6 py-2 font-semibold hover:bg-blue-800 inline-block"
-              >
-                Unternehmensmitglied werden
-              </a>
-            </div>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Persönliche Mitgliedschaft */}
+          <div className="bg-accentGray p-6 text-center rounded shadow">
+            <h3 className="text-blue-900 font-semibold mb-2">Persönliche Mitgliedschaft Deutschland</h3>
+            <p className="mb-4">Jahresbeitrag EUR 250.00</p>
+            <a
+              href="/mitgliedschaft/de/Baerenherz_Antrag_Mitgliedschaft_DE.pdf"
+              download
+              className="bg-accentBlue text-white px-6 py-2 font-semibold hover:bg-actionRed inline-block"
+            >
+              Persönliches Mitglied werden
+            </a>
           </div>
 
-          <p className="mt-8 text-gray-800 leading-relaxed">
-            Der Jahresbeitrag ist jeweils für das Kalenderjahr geschuldet. Bitte füllen Sie das verknüpfte Antragsformular aus 
-            und reichen Sie dieses ein an <a href="mailto:info@baerenherz.org" className="text-blue-900 font-semibold">info@baerenherz.org</a> 
-            &nbsp; oder per Post an Bärenherz – Verein für humanitäre Hilfe, c/o Rainer Mück, Untersellenstrasse 37, 8873 Amden.
-            Der Vorstand entscheidet über die Aufnahme neuer Vereinsmitglieder.
-          </p>
+          {/* Unternehmensmitgliedschaft */}
+          <div className="bg-accentGray p-6 text-center rounded shadow">
+            <h3 className="text-blue-900 font-semibold mb-2">Unternehmensmitgliedschaft Deutschland</h3>
+            <p className="mb-4">Jahresbeitrag EUR 1&apos;000.00</p>
+            <a
+              href="/mitgliedschaft/de/Baerenherz_Antrag_Mitgliedschaft_DE.pdf"
+              download
+              className="bg-accentBlue text-white px-6 py-2 font-semibold hover:bg-actionRed inline-block"
+            >
+              Unternehmensmitglied werden
+            </a>
+          </div>
         </div>
+
+        <p className="mt-8 text-gray-800 leading-relaxed">
+          Der Jahresbeitrag ist jeweils für das Kalenderjahr geschuldet. Bitte füllen Sie das verknüpfte Antragsformular aus 
+          und reichen Sie dieses ein an <a href="mailto:info@baerenherz.org" className="link">info@baerenherz.org</a> 
+          &nbsp; oder per Post an Bärenherz – Verein für humanitäre Hilfe, c/o Rainer Mück, Untersellenstrasse 37, 8873 Amden.
+          Der Vorstand entscheidet über die Aufnahme neuer Vereinsmitglieder.
+        </p>
       </section>
 
       <section className="py-12 px-6">

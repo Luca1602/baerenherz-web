@@ -21,7 +21,7 @@ export default function CHHome() {
         </div>
       </section>
 
-      <main className="container-body py-10">
+      <main className="container-body">
         <p className="text-xl leading-relaxed">
           Bärenherz - Verein für humanitäre Hilfe - wurde 2021 in der Schweiz durch
           Rainer Mück gegründet. Im April 2025 haben wir auch einen deutschen Verein

@@ -138,12 +138,6 @@ export default function Header() {
                       `}
                     >
                       {item.label}
-                      {/* Pfeil nur bei Items mit Children UND nicht bei "Über uns" */}
-                      {item.children && item.label !== 'Über uns' && (
-                        <span className="ml-1 transform transition-transform duration-200">
-                          <FaChevronDown className="text-sm" />
-                        </span>
-                      )}
                     </Link>
                   ) : (
                     <span className="flex items-center cursor-default">
@@ -174,11 +168,11 @@ export default function Header() {
           {/* Desktop: Country Dropdown + Spenden – rechts */}
           <div className="hidden md:flex items-center space-x-6">
             {/* Länder-Dropdown: "Du befindest dich auf:" */}
-            <div className="text-xs text-brandGold">
-              <span className="block mb-1">Du befindest dich auf:</span>
+            <div className="text-xs text-black">
+              <span className="block">Du befindest dich auf:</span>
 
               <div
-                className="relative inline-block text-lg font-semibold"
+                className="relative inline-block text-lg font-semibold text-brandGold"
                 onMouseEnter={() => setCountryDropdownOpen(true)}
                 onMouseLeave={() => setCountryDropdownOpen(false)}
               >
@@ -261,7 +255,7 @@ export default function Header() {
           <nav className="md:hidden bg-white border-t">
             <ul className="flex flex-col">
               {/* Länder-Dropdown / Auswahl mobil */}
-              <li className="border-b px-4 py-3">
+              <li className="px-4 py-3">
                 <p className="text-xs text-gray-600 mb-1">Du befindest dich auf:</p>
                 <div className="relative">
                   <button
@@ -280,7 +274,7 @@ export default function Header() {
                           handleCountryChange('ch')
                           setMobileMenuOpen(false)
                         }}
-                        className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${
+                        className={`w-full text-left px-4 py-2 text-lg hover:bg-gray-100 ${
                           isCH ? 'font-semibold' : ''
                         }`}
                       >
@@ -291,7 +285,7 @@ export default function Header() {
                           handleCountryChange('de')
                           setMobileMenuOpen(false)
                         }}
-                        className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${
+                        className={`w-full text-left px-4 py-2 text-lg hover:bg-gray-100 ${
                           !isCH ? 'font-semibold' : ''
                         }`}
                       >
@@ -303,8 +297,8 @@ export default function Header() {
               </li>
 
               {menuItems.map((item) => (
-                <li key={item.label} className="border-b">
-                  <div className="flex justify-between items-center px-4 py-3">
+                <li key={item.label}>
+                  <div className="flex justify-between text-lg items-center px-4 py-3">
                     <Link
                       href={item.href}
                       onClick={() => {
@@ -323,9 +317,7 @@ export default function Header() {
                         }
                         className="text-sm text-gray-500 flex items-center"
                       >
-                        {openDropdown === item.label
-                          ? <FaChevronUp className="ml-1" />
-                          : <FaChevronDown className="ml-1" />}
+                        
                       </button>
                     )}
                   </div>
