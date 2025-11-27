@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function DEHome() {
   return (
     <>
-      <section className="relative w-full h-[60vh]">
+      <section className="container-hero relative">
         <Image
           src="/projekte/projekte-image.webp"
           alt="Bärenherz hero"
@@ -21,7 +21,7 @@ export default function DEHome() {
         </div>
       </section>
 
-      <main className="container-custom py-10">
+      <main className="container-body py-10">
         <p className="text-xl leading-relaxed">
           Bärenherz - Verein für humanitäre Hilfe - wurde 2021 in der Schweiz durch
           Rainer Mück gegründet. Im April 2025 haben wir auch einen deutschen Verein

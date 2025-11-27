@@ -100,13 +100,12 @@ export default function Header() {
   }
 
   const currentCountryLabel = isCH ? 'Bärenherz Schweiz' : 'Bärenherz Deutschland'
-  const currentCountryFlag = isCH ? '🇨🇭' : '🇩🇪'
 
   return (
     <>
       {/* Sticky Header */}
-      <header className="bg-accentGray shadow fixed top-0 left-0 right-0 z-50">
-        <div className="container-custom py-4 flex items-center justify-between">
+      <header className="header-bg shadow sticky top-0 z-50">
+        <div className="container-header py-2 flex items-center justify-between">
           
           {/* Logo */}
           <Link href={`/${country}`} className="flex items-center">
@@ -175,11 +174,11 @@ export default function Header() {
           {/* Desktop: Country Dropdown + Spenden – rechts */}
           <div className="hidden md:flex items-center space-x-6">
             {/* Länder-Dropdown: "Du befindest dich auf:" */}
-            <div className="text-sm text-brandGold">
+            <div className="text-xs text-brandGold">
               <span className="block mb-1">Du befindest dich auf:</span>
 
               <div
-                className="relative inline-block"
+                className="relative inline-block text-lg font-semibold"
                 onMouseEnter={() => setCountryDropdownOpen(true)}
                 onMouseLeave={() => setCountryDropdownOpen(false)}
               >
@@ -242,7 +241,7 @@ export default function Header() {
             {/* Jetzt spenden Button */}
             <Link
               href="/spenden"
-              className="bg-accentBlue text-white px-8 py-2 hover:bg-actionRed transition font-semibold whitespace-nowrap"
+              className="bg-accentBlue text-white px-8 py-4 text-lg hover:bg-actionRed transition font-semibold whitespace-nowrap"
             >
               Jetzt spenden!
             </Link>
@@ -370,9 +369,6 @@ export default function Header() {
           </nav>
         )}
       </header>
-
-      {/* Abstand unter dem Header für Inhalt */}
-      <div className="h-25"></div>
     </>
   )
 }

@@ -14,7 +14,7 @@ type AktivitaetListItem = {
 
 export default function AktivitaetenIndex({ aktivitaeten }: { aktivitaeten: AktivitaetListItem[] }) {
   return (
-    <main className="container-custom py-10">
+    <main className="container-body py-10">
       <h1 className="text-3xl font-bold mb-6">Alle Aktivitäten (Schweiz & Deutschland)</h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

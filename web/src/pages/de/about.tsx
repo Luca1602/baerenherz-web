@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function AboutDE() {
   return (
     <div>
-      <section className="relative w-full h-[60vh]">
+      <section className="container-hero relative">
         {/* background image of "about" */}
         <Image
           src="/about/about-image.webp"
@@ -27,7 +27,7 @@ export default function AboutDE() {
         </div>
       </section>
 
-      <div className="container-custom py-0">
+      <div className="container-body py-0">
         <section id="about" className="py-8">
           <h1 className="text-3xl font-bold mb-6">Über Bärenherz Deutschland</h1>
           <section id="mission" className="py-8">

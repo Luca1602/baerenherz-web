@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function MitgliedschaftCH() {
   return (
     <div>
-      <section className="relative w-full h-[60vh]">
+      <section className="container-hero relative">
           {/* background image of "mitgliedschaft" */}
           <Image
             src="/mitgliedschaft/mitgliedschaft-image.webp"

@@ -4,7 +4,7 @@ export default function Projekte() {
   return (
     <div>
 
-      <section className="relative w-full h-[60vh]">
+      <section className="container-hero relative">
         {/* background image of "projekte" */}
         <Image
           src="/projekte/projekte-image.webp"
