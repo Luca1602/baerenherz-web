@@ -6,7 +6,7 @@ export default function MitgliedschaftCH() {
       <section className="container-hero relative">
           {/* background image of "mitgliedschaft" */}
           <Image
-            src="/mitgliedschaft/mitgliedschaft-image.webp"
+            src="/hero/hero_mitgliedschaft.jpg"
             alt="Bärenherz hero"
             fill
             priority
@@ -16,10 +16,6 @@ export default function MitgliedschaftCH() {
           {/* Box over image */}
           <div className="absolute inset-0 flex items-center justify-start">
             <div className="bg-white bg-opacity-90 p-6 shadow-lg max-w-lg ml-0 sm:ml-8 md:ml-16 lg:ml-40">
-              <h2 className="text-blue-900 text-lg font-semibold mb-2">Mitgliedschaft bei Bärenherz Schweiz</h2>
-              <hr
-                className="border-t-2 my-2 w-full border-brandGold"
-              />
               <p className="text-brandGold text-3xl font-bold leading-snug">
                 Gemeinsam dort helfen, wo Hilfe gebraucht wird.
               </p>
@@ -32,7 +28,7 @@ export default function MitgliedschaftCH() {
         <h2 className="text-2xl font-bold text-blue-900 mb-6">Mitgliedschaft Bärenherz Schweiz</h2>
 
         <p className="text-gray-800 leading-relaxed">
-          Eine Mitgliedschaft bei Bärenherz Schweiz hilft uns, unsere administrativen Kosten und Aufgaben zu erfüllen.
+          Werden Sie jetzt Mitglied bei Bärenherz Schweiz und unterstützen Sie damit eine gute Sache!
           Ein wesentlicher Teil unserer Philosophie ist es, dass alle Einnahmen aus unseren Aktivitäten zu 100% 
           in die jeweils geförderten Projekte fliessen. Sämtliche administrativen Kosten wie z.B. Pflege der Homepage 
           werden ehrenamtlich übernommen bzw. von Mitgliedsbeiträgen oder Zuwendungen der Mitglieder getragen.
@@ -70,7 +66,7 @@ export default function MitgliedschaftCH() {
           </div>
         </div>
 
-        <p className="mt-8 text-gray-800 leading-relaxed">
+        <p className="mt-8 text-gray-800 leading-relaxed mb-10">
           Der Jahresbeitrag ist jeweils für das Kalenderjahr geschuldet. Bitte füllen Sie das verknüpfte Antragsformular aus 
           und reichen Sie dieses ein an <a href="mailto:info@baerenherz.org" className="link">info@baerenherz.org</a> 
           &nbsp; oder per Post an Bärenherz – Verein für humanitäre Hilfe, c/o Rainer Mück, Untersellenstrasse 37, 8873 Amden.
@@ -78,7 +74,7 @@ export default function MitgliedschaftCH() {
         </p>
       
 
-        <h2 className="text-2xl font-bold text-blue-900 mb-6">Eventpartner</h2>
+        <h2 className="text-2xl py-5 font-bold text-blue-900">Eventpartner</h2>
 
         <p className="text-gray-800 leading-relaxed">
           Als Eventpartner helfen Sie uns, die jeweiligen Events so kostengünstig wie möglich durchzuführen.

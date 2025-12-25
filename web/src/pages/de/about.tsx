@@ -6,7 +6,7 @@ export default function AboutDE() {
       <section className="container-hero relative">
         {/* background image of "about" */}
         <Image
-          src="/about/about-image.webp"
+          src="/hero/hero_about.jpg"
           alt="Bärenherz hero"
           fill
           priority
@@ -16,12 +16,8 @@ export default function AboutDE() {
         {/* Box over image */}
         <div className="absolute inset-0 flex items-center justify-start">
           <div className="bg-accentGray bg-opacity-90 p-6 shadow-lg max-w-lg ml-0 sm:ml-8 md:ml-16 lg:ml-40">
-            <h2 className="text-blue-900 text-lg font-semibold mb-2">Bärenherz Deutschland</h2>
-            <hr
-              className="border-t-2 my-2 w-full border-brandGold"
-            />
             <p className="text-brandGold text-3xl font-bold leading-snug">
-              Direkte Hilfe, unbürokratisch und schnell.
+              Direkte Hilfe, unbürokratisch <br></br> und schnell.
             </p>
           </div>
         </div>
@@ -33,24 +29,23 @@ export default function AboutDE() {
           <section id="mission" className="py-8">
             <h2 className="text-2xl font-bold mb-4">Mission</h2>
             <p>
-              Unsere Mission ist es, dort zu helfen, wo lebensnotwendige Unterstützung
-              benötigt dringend wird. Wir sind ein unabhängiger Verein, der durch das
-              persönliche und ehrenamtliche Engagement der Mitglieder sowie den
-              Einnahmen aus von uns organisierten Charity Events und Spendengeldern
-              jeweils im Vorfeld definierte Projekte in Sinne der Philosophie des Vereins
-              unterstützt.
+              Wir setzen uns für Menschen in akuter Not ein – dort, wo lebensnotwendige Unterstützung fehlt. 
+              Als unabhängiger Verein realisieren wir gezielt ausgewählte Hilfsprojekte, finanziert durch Spenden, 
+              Charity-Events und vor allem durch das persönliche Engagement unserer Mitglieder. Unser Handeln ist 
+              geprägt von Verantwortung, Transparenz und dem Wunsch, aus Mitgefühl wirksame Hilfe zu gestalten.
             </p>
           </section>
 
           <section id="philosophie" className="py-8">
             <h2 className="text-2xl font-bold mb-4">Philosophie</h2>
             <p>
-              Die Grundidee unseres Vereins ist es, da zu helfen, wo Hilfe wirklich gebraucht wird, um Leben zu retten, 
-              lebenswerte Bedingungen zu schafen oder in unverschuldeten Notsituationen einen schnellen uns 
-              unbürokratischen Beitrag zur Soforthilfe zu leisten.
+              Wir glauben daran, dass echte Hilfe dort beginnt, wo sie wirklich gebraucht wird.
+              Unsere Arbeit richtet sich auf das Wesentliche: Leben retten, lebenswerte Bedingungen 
+              schaffen und in unverschuldeten Notsituationen schnell und unbürokratisch zur Seite stehen. 
+              Wir sind geleitet durch Mitgefühl, Menschlichkeit und der Mut, hinzuschauen und zu handeln.
             </p>
 
-            <div className="max-w-6xl mx-auto px-4 py-8">
+            <div className="mx-auto py-8">
               {/* The card ("Kasten") */}
               <div
                 className="bg-accentBlue rounded-2xl shadow-xl p-6 md:p-10"
@@ -63,40 +58,32 @@ export default function AboutDE() {
                   <div className="bg-white rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-semibold mb-3">Hilfe zur Selbsthilfe</h3>
                     <p className="text-gray-700">
-                      So wie in der Vergangenheit bei Project Hope e.V. leisten auch wir in den von uns 
-                      unterstützen Projekten Hilfe zur Selbsthilfe: Wir wollen nicht einfach materielle 
-                      Zuwendungen geben, sondern aktiv die jeweilige Notsituation so verbessern, dass mittel- 
-                      bis langfristig eine nachhaltige Verbesserung erreicht werden kann.
+                      Wie schon bei Project Hope e. V. steht auch bei Bärenherz die Hilfe 
+                      zur Selbsthilfe im Mittelpunkt. Unser Ziel ist es nicht, nur kurzfristig 
+                      zu unterstützen, sondern gemeinsam mit den Menschen Wege aus der Not zu gestalten.
+                       Dort, wo wir helfen, wollen wir Strukturen stärken, Ressourcen aufbauen und die 
+                       Grundlage für eine nachhaltige Verbesserung der Lebensumstände schaffen.
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg shadow-md p-6">
+                  <div className="bg-accentGray rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-semibold mb-3">Ehrenamtlich aus Überzeugung</h3>
                     <p className="text-gray-700">
-                      Wir arbeiten ehrenamtlich und aus Überzeugung: Alles was wir bewegen, machen wir mit 
-                      viel Freunde und Elan in unserer Freizeit, weil wir wissen, dass wir damit einen 
-                      wertvollen Beitrag für Leben unter lebenswerten Bedingungen leisten können.
+                      Wir arbeiten ehrenamtlich und aus Überzeugung: Alles, was wir bewegen, 
+                      machen wir mit viel Freude und Elan in unserer Freizeit, weil wir wissen, dass 
+                      wir damit einen wertvollen Beitrag für Leben unter lebenswerten Bedingungen leisten können.
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg shadow-md p-6">
+                  <div className="bg-accentGray rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-semibold mb-3">Unnötige Kosten vermeiden</h3>
                     <p className="text-gray-700">
-                      Wir wollen unnötige Kosten vermeiden: Unsere administrativen Aufwendungen halten 
-                      wir auf einem Minimum und finanzieren diese intern durch unsere Mitgliedbeiträge 
-                      und sonstigen finanziellen Zuwendungen der Mitglieder und Vorstände.
+                      Wir wollen unnötige Kosten vermeiden: Unsere administrativen Aufwendungen halten wir 
+                      auf einem Minimum und finanzieren diese intern durch unsere Mitgliedbeiträge und sonstigen 
+                      finanziellen Zuwendungen der Mitglieder und Vorstände.
                     </p>
                   </div>
                 </div>
-
-                {/* Short text at the bottom inside the card */}
-                <p className="mt-8 text-center text-white font-bold">
-                  Diese Hilfe erreichen wir im Wesentlichen mit unseren Charity Aktionen. 
-                  Hier möchten wir in einem spannenden Umfeld gemeinsam Spass haben aber 
-                  gerade mit dem Wissen über unsere persönliche privilegierte Lebenssituation 
-                  auch einen Teil an diejenigen weiterreichen, denen es nicht so gut geht. Das 
-                  ist unser Antrieb und unsere Motivation.
-                </p>
               </div>
             </div>
           </section>
@@ -108,12 +95,12 @@ export default function AboutDE() {
               {/* Text */}
               <div className="md:w-1/2">
                 <p>
-                  Aktuell setzt sich der Vorstand von Bärenherz Schweiz aus folgenden Personen zusammen:
+                  Aktuell setzt sich der Vorstand von Bärenherz Deutschland aus folgenden Personen zusammen:
                 </p>
                 <ul className="list-disc list-inside space-y-2 mt-2">
-                  <li><b>Vereinspräsident Tom Luther</b>, Founder & Managing Partner 7Cap Investments GmbH</li>
-                  <li><b>Vereinsvizepräsident Rainer Mück</b>, Gründer und Vorstand, Mück Management Partners AG</li>
-                  <li><b>Schriftführerin Christiane Rädiger</b>, Gründerin und CEO, twinnovativ GmbH</li>
+                  <li><b>Präsident Tom Luther</b>, Founder & Managing Partner 7Cap Investments GmbH</li>
+                  <li><b>Vizepräsident Rainer Mück</b>, Gründer und Vorstand, Mück Management Partners AG</li>
+                  <li><b>Schriftführerin Christiane Räbiger</b>, Gründerin und CEO, twinnovativ GmbH</li>
                   <li><b>Schatzmeister Oliver Brandt</b>, Geschäftsführer bei stahl + verbundbau gmbh</li>
                 </ul>
               </div>

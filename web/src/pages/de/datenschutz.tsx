@@ -1,6 +1,6 @@
 export default function DatenschutzDE() {
   return (
-    <main className="container-custom py-10">
+    <main className="container-body py-10">
 
       <h1 className="text-3xl font-bold mb-6">Datenschutzerklärung Bärenherz Deutschland</h1>
 

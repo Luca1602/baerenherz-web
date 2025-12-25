@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Column 1: Bärenherz Schweiz */}
           <div>
             <h3 className="text-lg font-semibold mb-3">Bärenherz Schweiz</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="text-sm">
               <li>Bärenherz - Verein für humanitäre Hilfe</li>
               <li>c/o Rainer Mück</li>
               <li>Untersellenstrasse 27</li>
@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Column 2: Bärenherz Deutschland */}
           <div>
             <h3 className="text-lg font-semibold mb-3">Bärenherz Deutschland</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="text-sm">
               <li>
                 <Link href="/de/impressum" className="link">
                   Impressum
@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li>Bärenherz – Verein für humanitäre Hilfe e.V.</li>
               <li>Geranienstrasse 2</li>
-              <li>U82031 Grünwald</li>
+              <li>DE-82031 Grünwald</li>
               <br />
               <li>E-Mail: <a href="mailto:info@baerenherz.org" className="link">info@baerenherz.org</a></li>
             </ul>

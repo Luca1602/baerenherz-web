@@ -7,13 +7,14 @@ type NewsItem = {
   _id: string
   title: string
   slug: { current: string }
-  date: string
+  publishedAt: string
+  description: string
   image?: any
 }
 
 export default function NewsIndex({ news }: { news: NewsItem[] }) {
   return (
-    <main className="container-custom py-10">
+    <main className="container-body py-10">
       <h1 className="text-3xl font-bold mb-6">News</h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -40,11 +41,15 @@ export default function NewsIndex({ news }: { news: NewsItem[] }) {
                 )}
                 <div className="p-4">
                   <div className="text-sm text-gray-600 mb-1">
-                    {new Date(n.date).toLocaleDateString("de-CH")}
+                    {new Date(n.publishedAt).toLocaleDateString("de-CH")}
                   </div>
-                  <h2 className="text-xl font-semibold text-blue-900 group-hover:underline">
+                  <h2 className="text-xl font-semibold text-blue-900">
                     {n.title}
                   </h2>
+
+                  <p className="mt-2 text-gray-700 line-clamp-3">
+                    {n.description}
+                  </p>
                 </div>
               </article>
             </Link>
@@ -57,11 +62,12 @@ export default function NewsIndex({ news }: { news: NewsItem[] }) {
 
 export async function getStaticProps() {
   const news: NewsItem[] = await client.fetch(`
-    *[_type == "news"] | order(date desc){
+    *[_type == "news"] | order(publishedAt desc){
       _id,
       title,
       slug,
-      date,
+      publishedAt,
+      description,
       image
     }
   `)

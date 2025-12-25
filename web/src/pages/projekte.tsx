@@ -7,7 +7,7 @@ export default function Projekte() {
       <section className="container-hero relative">
         {/* background image of "projekte" */}
         <Image
-          src="/projekte/projekte-image.webp"
+          src="/hero/hero_hilfsprojekte.jpg"
           alt="Bärenherz hero"
           fill
           priority
@@ -17,12 +17,8 @@ export default function Projekte() {
         {/* Box over image */}
         <div className="absolute inset-0 flex items-center justify-start">
           <div className="bg-white bg-opacity-90 p-6 shadow-lg max-w-lg ml-0 sm:ml-8 md:ml-16 lg:ml-40">
-            <h2 className="text-lg font-semibold mb-2">Projekte</h2>
-            <hr
-              className="border-t-2 my-2 w-full border-brandGold"
-            />
             <p className="text-brandGold text-3xl font-bold leading-snug">
-              Hilfe für die Schwächsten. Direkt und lebensrettend.
+              Hilfe für die Schwächsten. <br></br>Direkt und lebensrettend.
             </p>
           </div>
         </div>
@@ -30,7 +26,7 @@ export default function Projekte() {
 
       <div className="container-body">
 
-        <section id="projekte2025">
+        <section id="projekte2025" className="mb-12 py-6">
 
           <h2 className="text-2xl font-bold text-blue-900 mb-6">Projekte 2025</h2>
 

@@ -1,10 +1,11 @@
 export default function ImpressumDE() {
   return (
-    <main className="container-custom py-10">
+    <main className="container-body py-10">
       <h1 className="text-3xl font-bold mb-6">Impressum Bärenherz Deutschland</h1>
 
       <p className="mb-2">Bärenherz – Verein für humanitäre Hilfe e.V.</p>
       <p className="mb-2">Geranienstrasse 2</p>
+      <p className="mb-2">DE-82031 Grünwald</p>
       <p className="mb-2">Germany</p>
 
       <h2 className="text-xl font-semibold mt-8 mb-3">Kontakt</h2>
