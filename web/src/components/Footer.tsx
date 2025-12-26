@@ -96,13 +96,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-3">Mehr von Bärenherz</h3>
             <div className="flex space-x-4 text-2xl">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <a href="https://www.linkedin.com/company/bärenherz-verein-für-humanitäre-hilfe/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
                 <FaLinkedin />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
+              <a href="https://www.instagram.com/baerenherz_humanitaere_hilfe/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
                 <FaInstagram />
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+              <a href="https://www.facebook.com/baerenherz.org/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
                 <FaFacebook />
               </a>
             </div>
