@@ -58,7 +58,7 @@ export default function AboutCH() {
                   <div className="bg-accentGray rounded-lg shadow-md p-6">
                     <h3 className="text-xl font-semibold mb-3">Hilfe zur Selbsthilfe</h3>
                     <p className="text-gray-700">
-                      Wie schon bei Project Hope e. V. steht auch bei Bärenherz die Hilfe 
+                      Bei Bärenherz steht die Hilfe  
                       zur Selbsthilfe im Mittelpunkt. Unser Ziel ist es nicht, nur kurzfristig 
                       zu unterstützen, sondern gemeinsam mit den Menschen Wege aus der Not zu gestalten.
                        Dort, wo wir helfen, wollen wir Strukturen stärken, Ressourcen aufbauen und die 
@@ -76,11 +76,11 @@ export default function AboutCH() {
                   </div>
 
                   <div className="bg-accentGray rounded-lg shadow-md p-6">
-                    <h3 className="text-xl font-semibold mb-3">Unnötige Kosten vermeiden</h3>
+                    <h3 className="text-xl font-semibold mb-3">Keine unnötige Kosten</h3>
                     <p className="text-gray-700">
-                      Wir wollen unnötige Kosten vermeiden: Unsere administrativen Aufwendungen halten wir 
-                      auf einem Minimum und finanzieren diese intern durch unsere Mitgliedbeiträge und sonstigen 
-                      finanziellen Zuwendungen der Mitglieder und Vorstände.
+                      Wir vermeiden unnötige Kosten: Unsere administrativen Aufwendungen halten wir auf einem Minimum und 
+                      finanzieren diese ausschliesslich  durch einen Teil unserer Mitgliedbeiträge. Alle Spenden sowie 
+                      die Einnahmen aus unseren Aktivitäten  kommen zu 100% den Projekten zu Gute.
                     </p>
                   </div>
                 </div>

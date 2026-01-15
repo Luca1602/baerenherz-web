@@ -1,11 +1,16 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
+import dynamic from "next/dynamic";
+
+const BrevoNewsletterForm = dynamic(() => import("./BrevoNewsletterForm"), {
+  ssr: false,
+});
 
 export default function Footer() {
   return (
     <>
       {/* Newsletter-Balken */}
-      <div className="bg-accentGray py-8">
+      <div className="bg-accentGray py-4">
         <div className="container-footer flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <h3 className="text-xl font-semibold text-blue-900">
@@ -16,19 +21,7 @@ export default function Footer() {
               Kein Spam, versprochen!
             </p>
           </div>
-          <form className="flex w-full md:w-auto">
-            <input
-              type="email"
-              placeholder="Deine E-Mail-Adresse"
-              className="p-2 rounded-l-md border border-gray-300 flex-grow md:w-64"
-            />
-            <button
-              type="submit"
-              className="bg-accentBlue text-white px-4 py-2 rounded-r-md hover:bg-actionRed cursor-pointer"
-            >
-              Anmelden
-            </button>
-          </form>
+          <BrevoNewsletterForm />
         </div>
       </div>
 

@@ -7,15 +7,19 @@ export default function Spenden() {
         <title>Jetzt spenden – Bärenherz</title>
       </Head>
 
-      <main className="container-custom py-12">
-        <h1 className="text-4xl font-bold text-center text-blue-900 mb-6">Jetzt spenden</h1>
-        <p className="text-lg text-center max-w-3xl mx-auto mb-10">
+      <main className="container-body py-12">
+        <h1 className="text-4xl font-bold text-blue-900 mb-6">Jetzt spenden</h1>
+        <p className="text-lg mx-auto">
           Mit Ihrer Spende unterstützen Sie unsere Projekte und helfen uns, Menschen in Not
-          direkt und unbürokratisch zu unterstützen. Jeder Beitrag zählt – vielen Dank für Ihre Hilfe!
+          direkt und unbürokratisch zu unterstützen.
+        </p>
+          
+        <p className="text-lg mx-auto mb-10"> 
+          Jeder Beitrag zählt – vielen Dank für Ihre Hilfe!
         </p>
 
         {/* Spendenmöglichkeiten */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8  mx-auto">
           
           {/* Bankverbindung CH */}
           <div className="bg-accentGray p-6 rounded shadow">
