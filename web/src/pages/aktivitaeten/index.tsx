@@ -89,5 +89,5 @@ export async function getStaticProps() {
     }
   `)
 
-  return { props: { aktivitaeten }, revalidate: 60 }
+  return { props: { aktivitaeten }}
 }

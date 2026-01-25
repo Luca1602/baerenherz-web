@@ -82,7 +82,7 @@ export async function getStaticPaths() {
 
   return {
     paths: slugs.map((s) => ({ params: { slug: s.slug.current } })),
-    fallback: "blocking",
+    fallback: false,
   }
 }
 
@@ -104,5 +104,5 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     { slug: params.slug }
   )
 
-  return { props: { aktivitaet }, revalidate: 60 }
+  return { props: { aktivitaet }}
 }

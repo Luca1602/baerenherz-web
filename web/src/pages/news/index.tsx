@@ -72,5 +72,5 @@ export async function getStaticProps() {
     }
   `)
 
-  return { props: { news }, revalidate: 60 }
+  return { props: { news }}
 }

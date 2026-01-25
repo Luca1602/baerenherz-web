@@ -56,13 +56,13 @@ export async function getStaticPaths() {
 
   return {
     paths: slugs.map((s) => ({ params: { slug: s.slug.current } })),
-    fallback: "blocking",
+    fallback: false,
   }
 }
 
 export async function getStaticProps({ params }: { params?: { slug?: string } }) {
   const slug = params?.slug
-  if (!slug) return { notFound: true, revalidate: 60 }
+  if (!slug) return { notFound: true}
 
   const item: NewsDetail | null = await client.fetch(
     `
@@ -78,7 +78,7 @@ export async function getStaticProps({ params }: { params?: { slug?: string } })
     { slug }
   )
 
-  if (!item) return { notFound: true, revalidate: 60 }
+  if (!item) return { notFound: true}
 
-  return { props: { item }, revalidate: 60 }
+  return { props: { item }}
 }
