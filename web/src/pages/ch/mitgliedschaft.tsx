@@ -6,7 +6,7 @@ export default function MitgliedschaftCH() {
       <section className="container-hero relative">
           {/* background image of "mitgliedschaft" */}
           <Image
-            src="/hero/hero_mitgliedschaft.jpg"
+            src="/hero/hero_mitgliedschaft.webp"
             alt="Bärenherz hero"
             fill
             priority

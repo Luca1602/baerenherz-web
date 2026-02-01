@@ -7,7 +7,7 @@ export default function Projekte() {
       <section className="container-hero relative">
         {/* background image of "projekte" */}
         <Image
-          src="/hero/hero_hilfsprojekte.jpg"
+          src="/hero/hero_hilfsprojekte.webp"
           alt="Bärenherz hero"
           fill
           priority

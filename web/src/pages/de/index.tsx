@@ -5,7 +5,7 @@ export default function DEHome() {
     <>
       <section className="container-hero relative">
         <Image
-          src="/hero/hero_homepage2.jpg"
+          src="/hero/hero_homepage2.webp"
           alt="Bärenherz hero"
           fill
           priority

@@ -6,7 +6,7 @@ export default function AboutDE() {
       <section className="container-hero relative">
         {/* background image of "about" */}
         <Image
-          src="/hero/hero_about.jpg"
+          src="/hero/hero_about.webp"
           alt="Bärenherz hero"
           fill
           priority
