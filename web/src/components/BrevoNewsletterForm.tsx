@@ -47,7 +47,7 @@ export default function BrevoNewsletterForm() {
           <div
             className="g-recaptcha"
             id="sib-captcha"
-            data-sitekey="6LcypDcsAAAAAPLw3Q7h4I-lTSOcT7RaNmaWNvfR"
+            data-sitekey="6Lcnq10sAAAAAPTO2moG3KWS8TnGaAuoqLyrqxgO"
             data-callback="handleCaptchaResponse"
           />
         </div>
