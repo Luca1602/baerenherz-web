@@ -10,12 +10,12 @@ export default function Spenden() {
       <main className="container-body py-12">
         <h1 className="text-4xl font-bold text-blue-900 mb-6">Jetzt spenden</h1>
         <p className="text-lg mx-auto">
-          Mit Ihrer Spende unterstützen Sie unsere Projekte und helfen uns, Menschen in Not
+          Mit deiner Spende unterstützt du unsere Projekte und hilfst uns, Menschen in Not
           direkt und unbürokratisch zu unterstützen.
         </p>
           
         <p className="text-lg mx-auto mb-10"> 
-          Jeder Beitrag zählt – vielen Dank für Ihre Hilfe!
+          Jeder Beitrag zählt – vielen Dank für deine Hilfe!
         </p>
 
         {/* Spendenmöglichkeiten */}
