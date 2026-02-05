@@ -27,9 +27,8 @@ export default function AktivitaetDetail({
   const imgUrl = aktivitaet.image
     ? urlFor(aktivitaet.image)
         .width(1200)
-        .height(700)
-        .fit("max") // nie croppen
-        .bg("ffffff") // weiße Balken
+        .fit("max")
+        .bg("ffffff")
         .url()
     : null
 

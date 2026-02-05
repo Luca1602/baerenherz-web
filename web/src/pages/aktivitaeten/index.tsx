@@ -31,7 +31,6 @@ export default function AktivitaetenIndex({
           const imgUrl = a.image
             ? urlFor(a.image)
                 .width(900)
-                .height(550)
                 .fit("max")
                 .bg("ffffff")
                 .url()
@@ -47,16 +46,15 @@ export default function AktivitaetenIndex({
             >
               <article>
                 {imgUrl && (
-                  <div className="w-full h-48 bg-white rounded-t-lg flex items-center justify-center">
-                    <Image
-                      src={imgUrl}
-                      alt={a.title}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="max-h-48 w-auto object-contain"
-                    />
-                  </div>
+                  <div className="relative w-full h-48 bg-white rounded-t-lg overflow-hidden">
+                  <Image
+                    src={imgUrl}
+                    alt={a.title}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-contain"
+                  />
+                </div>
                 )}
 
                 <div className="p-4">
