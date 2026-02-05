@@ -20,7 +20,11 @@ export default function NewsIndex({ news }: { news: NewsItem[] }) {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {news.map((n) => {
           const imgUrl = n.image
-            ? urlFor(n.image).width(900).height(550).fit("crop").url()
+            ? urlFor(n.image)
+                .width(900)
+                .fit("max")
+                .bg("ffffff")
+                .url()
             : null
 
           return (
@@ -31,13 +35,15 @@ export default function NewsIndex({ news }: { news: NewsItem[] }) {
             >
               <article>
                 {imgUrl && (
+                  <div className="relative w-full h-48 bg-white rounded-t-lg overflow-hidden">
                   <Image
                     src={imgUrl}
                     alt={n.title}
-                    width={900}
-                    height={550}
-                    className="rounded-t-lg w-full h-48 object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-contain"
                   />
+                </div>
                 )}
                 <div className="p-4">
                   <div className="text-sm text-gray-600 mb-1">

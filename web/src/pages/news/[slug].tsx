@@ -17,7 +17,11 @@ export default function NewsDetailPage({ item }: { item: NewsDetail | null }) {
   }
 
   const imgUrl = item.image
-    ? urlFor(item.image).width(1400).height(800).fit("max").bg("ffffff").url()
+    ? urlFor(item.image)
+        .width(1200)
+        .fit("max")
+        .bg("ffffff")
+        .url()
     : null
 
   return (
@@ -34,9 +38,9 @@ export default function NewsDetailPage({ item }: { item: NewsDetail | null }) {
             <Image
               src={imgUrl}
               alt={item.title}
-              width={1400}
-              height={800}
-              className="w-full h-auto object-contain p-2 rounded-lg"
+              width={1200}
+              height={700}
+              className="w-full h-auto object-contain p-2"
             />
           </div>
         </div>
