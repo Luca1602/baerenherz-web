@@ -44,7 +44,7 @@ export default defineType({
     },
     { name: 'description', title: 'Beschreibung', type: 'text' },
     { name: 'image', title: 'Bild', type: 'image' },
-    { name: 'link', title: 'Medienlink', type: 'url' },
+    { name: 'link', title: 'Zur Bildergalerie', type: 'url' },
     {
       name: 'country',
       title: 'Land der Aktivität',
