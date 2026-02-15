@@ -46,6 +46,15 @@ export default defineType({
     { name: 'image', title: 'Bild', type: 'image' },
     { name: 'link', title: 'Zur Bildergalerie', type: 'url' },
     {
+      name: 'invitationPdf',
+      title: 'Einladung und Anmeldung (PDF)',
+      type: 'file',
+      options: {
+        accept: 'application/pdf',
+      },
+      description: 'PDF mit Einladung und Anmeldeformular zum Event',
+    },
+    {
       name: 'country',
       title: 'Land der Aktivität',
       type: 'string',
