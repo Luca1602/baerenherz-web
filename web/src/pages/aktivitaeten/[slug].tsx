@@ -11,6 +11,11 @@ type Aktivitaet = {
   description?: string
   image?: any
   link?: string
+  invitationPdf?: {
+    asset?: {
+      url?: string
+    }
+  }
   country: string
   slug: { current: string }
 }
@@ -25,14 +30,12 @@ export default function AktivitaetDetail({
   }
 
   const imgUrl = aktivitaet.image
-    ? urlFor(aktivitaet.image)
-        .width(1200)
-        .fit("max")
-        .bg("ffffff")
-        .url()
+    ? urlFor(aktivitaet.image).width(1200).fit("max").bg("ffffff").url()
     : null
 
   const datumText = formatAktivitaetDatum(aktivitaet.startDate, aktivitaet.endDate)
+
+  const pdfUrl = aktivitaet.invitationPdf?.asset?.url
 
   return (
     <main className="container-body py-10">
@@ -53,7 +56,6 @@ export default function AktivitaetDetail({
             />
           </div>
         </div>
-
       )}
 
       {aktivitaet.description && (
@@ -61,14 +63,29 @@ export default function AktivitaetDetail({
       )}
 
       {aktivitaet.link && (
-        <a
-          href={aktivitaet.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 underline"
-        >
-          Zum Medienlink
-        </a>
+        <div className="mb-4">
+          <a
+            href={aktivitaet.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 underline"
+          >
+            Zur Bildergalerie
+          </a>
+        </div>
+      )}
+
+      {pdfUrl && (
+        <div className="mt-2">
+          <a
+            href={pdfUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition"
+          >
+            Einladung & Anmeldung herunterladen (PDF)
+          </a>
+        </div>
       )}
     </main>
   )
@@ -97,11 +114,16 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
       description,
       image,
       link,
-      country
+      country,
+      invitationPdf{
+        asset->{
+          url
+        }
+      }
     }
   `,
     { slug: params.slug }
   )
 
-  return { props: { aktivitaet }}
+  return { props: { aktivitaet } }
 }
