@@ -81,7 +81,7 @@ export default function AktivitaetDetail({
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition"
+            className="inline-block bg-accentBlue text-white px-5 py-2 rounded-md hover:bg-actionRed transition"
           >
             Einladung & Anmeldung herunterladen (PDF)
           </a>
