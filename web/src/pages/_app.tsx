@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Head from "next/head"
 import Script from 'next/script'
 import '../styles/globals.css'
 import Header from '../components/Header'
@@ -7,6 +8,13 @@ import Footer from '../components/Footer'
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <title>Bärenherz - Verein für humanitäre Hilfe</title>
+        <meta
+          name="description"
+          content="Bärenherz unterstützt humanitäre Hilfsprojekte – Aktivitäten, Projekte, News und Spenden."
+        />
+      </Head>
       {/* Brevo config muss vor dem Brevo main.js gesetzt sein */}
       <Script id="brevo-config" strategy="beforeInteractive">
         {`

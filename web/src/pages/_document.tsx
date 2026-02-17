@@ -10,6 +10,10 @@ export default function Document() {
           rel="stylesheet"
         />
 
+        <link rel="icon" href="/logo/favicon_32x32.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon_32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="logo//favicon_16x16.png" />
+
         {/* Brevo styles (global) */}
         <link
           rel="stylesheet"
