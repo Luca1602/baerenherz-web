@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Projekte() {
+export default function ProjekteCH() {
   return (
     <div>
 

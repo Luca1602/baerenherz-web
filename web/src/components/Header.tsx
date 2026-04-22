@@ -60,7 +60,7 @@ export default function Header() {
     },
     {
       label: 'Hilfsprojekte',
-      href: '/projekte', // gemeinsam
+      href: isCH ? '/ch/projekte' : '/de/projekte',
     },
     {
       label: 'Aktivitäten',
