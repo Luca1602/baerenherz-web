@@ -14,7 +14,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon_32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="logo//favicon_16x16.png" />
 
-        {/* Brevo styles (global) */}
+        {/* Brevo style (global) */}
         <link
           rel="stylesheet"
           href="https://sibforms.com/forms/end-form/build/sib-styles.css"
