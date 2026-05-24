@@ -18,7 +18,7 @@ export default function Spenden() {
           Jeder Beitrag zählt – vielen Dank für deine Hilfe!
         </p>
 
-        {/* Spendenmöglichkeit */}
+        {/* Spendenmöglichkeiten */}
         <div className="grid md:grid-cols-2 gap-8  mx-auto">
           
           {/* Bankverbindung CH */}
