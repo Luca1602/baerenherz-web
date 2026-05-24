@@ -72,7 +72,7 @@ export default function Footer() {
                 <p>Bärenherz – Verein für humanitäre Hilfe</p>
                 <p>Thurgauer Kantonalbank</p>
                 <p className="break-all">CH91 0078 4297 6098 0200 1 (CHF)</p>
-                <p className="break-all">CH91 0078 4297 6098 0200 2 (EUR)</p>
+                <p className="break-all">CH64 0078 4297 6098 0200 2 (EUR)</p>
                 <p>BIC: KBTGCH22</p>
               </div>
               <div>

@@ -27,7 +27,7 @@ export default function Spenden() {
             <p><strong>Bärenherz – Verein für humanitäre Hilfe</strong></p>
             <p>Thurgauer Kantonalbank</p>
             <p>CH91 0078 4297 6098 0200 1 (CHF)</p>
-            <p>CH91 0078 4297 6098 0200 2 (EUR)</p>
+            <p>CH64 0078 4297 6098 0200 2 (EUR)</p>
             <p>BIC: KBTGCH22</p>
           </div>
 
