@@ -47,12 +47,21 @@ export default defineType({
     { name: 'link', title: 'Zur Bildergalerie', type: 'url' },
     {
       name: 'invitationPdf',
-      title: 'Einladung und Anmeldung (PDF)',
+      title: 'Einladung (PDF)',
+      type: 'file',
+      options: {
+        accept: 'invitation/pdf',
+      },
+      description: 'PDF mit Einladung zum Event',
+    },
+    {
+      name: 'applicationPdf',
+      title: 'Anmeldung (PDF)',
       type: 'file',
       options: {
         accept: 'application/pdf',
       },
-      description: 'PDF mit Einladung und Anmeldeformular zum Event',
+      description: 'PDF mit Anmeldeformular zum Event',
     },
     {
       name: 'country',

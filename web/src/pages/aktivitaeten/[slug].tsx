@@ -16,6 +16,11 @@ type Aktivitaet = {
       url?: string
     }
   }
+  applicationPdf?: {
+    asset?: {
+      url?: string
+    }
+  }
   country: string
   slug: { current: string }
 }
@@ -35,7 +40,8 @@ export default function AktivitaetDetail({
 
   const datumText = formatAktivitaetDatum(aktivitaet.startDate, aktivitaet.endDate)
 
-  const pdfUrl = aktivitaet.invitationPdf?.asset?.url
+  const invitationUrl = aktivitaet.invitationPdf?.asset?.url
+  const applicationUrl = aktivitaet.applicationPdf?.asset?.url
 
   return (
     <main className="container-body py-10">
@@ -75,15 +81,28 @@ export default function AktivitaetDetail({
         </div>
       )}
 
-      {pdfUrl && (
+      {invitationUrl && (
         <div className="mt-2">
           <a
-            href={pdfUrl}
+            href={invitationUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-accentBlue text-white px-5 py-2 rounded-md hover:bg-actionRed transition"
           >
-            Einladung & Anmeldung herunterladen (PDF)
+            Einladung herunterladen (PDF)
+          </a>
+        </div>
+      )}
+
+      {applicationUrl && (
+        <div className="mt-2">
+          <a
+            href={applicationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-accentBlue text-white px-5 py-2 rounded-md hover:bg-actionRed transition"
+          >
+            Anmeldung herunterladen (PDF)
           </a>
         </div>
       )}
@@ -116,6 +135,11 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
       link,
       country,
       invitationPdf{
+        asset->{
+          url
+        }
+      },
+      applicationPdf{
         asset->{
           url
         }
