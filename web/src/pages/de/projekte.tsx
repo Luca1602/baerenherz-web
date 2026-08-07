@@ -142,7 +142,7 @@ export default function ProjekteDE() {
               </p>
             </div>
 
-            {/* card 2 */}
+            {/* card  2 */}
             <div className="bg-accentBlue p-6 text-center text-white">
               <h3 className="text-lg font-semibold mb-4 text-blue-900">Fortbildung</h3>
               <p className="text-sm">
