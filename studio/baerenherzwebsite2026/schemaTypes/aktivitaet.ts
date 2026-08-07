@@ -50,7 +50,7 @@ export default defineType({
       title: 'Einladung (PDF)',
       type: 'file',
       options: {
-        accept: 'application/pdf',
+        accept: 'application/pdf', // lol
       },
       description: 'PDF mit Einladung zum Event',
     },
