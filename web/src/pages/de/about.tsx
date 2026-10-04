@@ -12,7 +12,6 @@ export default function AboutDE() {
           priority
           className="object-cover"
         />
-
         {/* Box over image */}
         <div className="absolute inset-0 flex items-center justify-start">
           <div className="bg-accentGray bg-opacity-90 p-6 shadow-lg max-w-lg ml-0 sm:ml-8 md:ml-16 lg:ml-40">
@@ -46,7 +45,7 @@ export default function AboutDE() {
             </p>
 
             <div className="mx-auto py-8">
-              {/* The card ("Kasten") */}
+              {/* The card "Kasten" */}
               <div
                 className="bg-accentBlue rounded-2xl shadow-xl p-6 md:p-10"
               >
