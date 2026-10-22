@@ -49,7 +49,7 @@ export default function AboutDE() {
               <div
                 className="bg-accentBlue rounded-2xl shadow-xl p-6 md:p-10"
               >
-                {/* Title inside the card */}
+                {/* Title inside the cardff */}
                 <h2 className="text-3xl font-bold text-center mb-8">Die Philosophie unseres Vereins beruht auf drei Grundgedanken:</h2>
 
                 {/* 3 responsive blocks */}
